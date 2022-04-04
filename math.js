@@ -1,5 +1,5 @@
 function isEven(n) {
-  return n % 2 === 0;
+  return parseInt(n) % 2 === 0;
 }
 
 module.exports = { isEven }
