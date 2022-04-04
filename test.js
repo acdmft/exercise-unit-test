@@ -20,4 +20,7 @@ test("if provided parameter is a string representing even number return true", (
   expect(result).toBe(true);
 });
 
-// test("if provided parameter")
+test("change date format from yyyy-mm-dd to dd/mm/yyyy", () => {
+  const result = math.formDate("2022-04-01");
+  expect(result).toBe("01/04/2022");
+});
