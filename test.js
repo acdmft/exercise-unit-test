@@ -24,3 +24,8 @@ test("change date format from yyyy-mm-dd to dd/mm/yyyy", () => {
   const result = math.formDate("2022-04-01");
   expect(result).toBe("01/04/2022");
 });
+
+test("if format of the parameter is not date return null", () => {
+  const result = math.formDate("455551111111111");
+  expect(result).toBe(null);
+});
